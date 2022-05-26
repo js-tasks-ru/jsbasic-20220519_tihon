@@ -9,9 +9,12 @@ function print(text) {
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
  */
-function isValid(name) {
-  // ваш код...
-}
+ function isValid(name) {
+    if (name !== null && name.length >= 4 && name !== "" && name.search(" ") == -1) {
+    return true;
+    }
+    return false;
+ }
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
@@ -22,3 +25,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+sayHello();
