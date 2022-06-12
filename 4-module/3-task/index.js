@@ -26,4 +26,4 @@ function highlight(table) {
     }
 }
 
-console.log(table.children[1].rows);
+//console.log(table.children[1].rows);
