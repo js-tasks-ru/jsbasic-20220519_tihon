@@ -13,9 +13,9 @@ function initCarousel() {
 
   btnRight.addEventListener("click", () => { 
     position -= sliderWidth;
-    counter++;
+//    counter++;
 
-    if (counter > 0) {
+    if ( ++ counter > 0) {
       btnLeft.style.display = '';
     }
 
@@ -26,16 +26,16 @@ function initCarousel() {
     position = Math.max(position, -sliderWidth * (carouselSlide.length -1));
     carouselInner.style.transform = "translateX(" + position + "px)";
 
-    console.log(counter);
+    //console.log(counter);
     
     
   });
 
   btnLeft.addEventListener("click", () => {
     position += sliderWidth;
-    counter--;
+    //counter--;
 
-    if (counter == 0) {
+    if ( -- counter == 0) {
       btnLeft.style.display = 'none';
     }
 
@@ -46,7 +46,7 @@ function initCarousel() {
     position = Math.min(position, 0);
     carouselInner.style.transform = "translateX(" + position + "px)";
 
-    console.log(counter);
+    //console.log(counter);
     
   });
 }

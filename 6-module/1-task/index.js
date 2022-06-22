@@ -61,28 +61,3 @@ export default class UserTable {
     console.log(this.#rows);
   }
 }
-
-// makeHTML() {
-//   let s = `      
-//   <thead>
-//   <tr>
-//       <th>Имя</th>
-//       <th>Возраст</th>
-//       <th>Зарплата</th>
-//       <th>Город</th>
-//       <th></th>
-//   </tr>
-//   </thead>
-//   <tbody>` + this.#rows.map(e => `
-//   <tr>
-//       <td>${e.name}</td>
-//       <td>${e.age}</td>
-//       <td>${e.salary}</td>
-//       <td>${e.city}</td>
-//       <td><button>X</button></td>
-//   </tr>              
-//           `).join("") + `</tbody>`;
-//   this.#elem.innerHTML = s;
-//   for (let b of this.#elem.querySelectorAll("button"))
-//       b.addEventListener("click", this);
-// }
